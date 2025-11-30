@@ -1,0 +1,13 @@
+{
+  "cards": [
+	{
+	  "id": "OBJ-001",
+	  "name": "Jarrón de las Mil Brasas",
+	  "category": "objeto",
+	  "rarity": "rara",
+	  "description": "Un jarrón de arcilla ennegrecida que exhala un calor antiguo incluso cuando el fuego está apagado.",
+	  "set": "ALB",
+	  "number": "001/040"
+	}
+  ]
+}

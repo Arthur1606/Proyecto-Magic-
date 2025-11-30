@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://bip28jlt50d0c"]
+
+[ext_resource type="Script" uid="uid://b7kkgbceehasb" path="res://scripts/CardView.gd" id="1_8lhvk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8lhvk"]
+bg_color = Color(0.9098039, 0.84705883, 0.6901961, 1)
+
+[node name="CardView" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8lhvk")
+
+[node name="Panel" type="Panel" parent="."]
+custom_minimum_size = Vector2(300, 450)
+layout_mode = 1
+offset_right = 300.0
+offset_bottom = 450.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8lhvk")
+
+[node name="NameLabel" type="Label" parent="Panel"]
+custom_minimum_size = Vector2(300, 40)
+layout_mode = 0
+offset_top = 10.0
+offset_right = 64.0
+offset_bottom = 33.0
+text = "Nombre"
+horizontal_alignment = 1
+
+[node name="RarityLabel" type="Label" parent="Panel"]
+custom_minimum_size = Vector2(300, 30)
+layout_mode = 0
+offset_top = 60.0
+offset_right = 53.0
+offset_bottom = 83.0
+text = "Rareza"
+horizontal_alignment = 1
+
+[node name="DescriptionLabel" type="Label" parent="Panel"]
+custom_minimum_size = Vector2(280, 330)
+layout_mode = 0
+offset_left = 10.0
+offset_top = 100.0
+offset_right = 101.0
+offset_bottom = 123.0
+text = "Descripción"
+autowrap_mode = 2
